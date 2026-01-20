@@ -1,0 +1,119 @@
+
+.social-section {
+
+  padding: 4rem 1rem;
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+  color: white;
+  text-align: center;
+}
+
+.social-title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 2.5rem;
+  background: linear-gradient(90deg, #60a5fa, #a78bfa, #f472b6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.social-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.8rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.social-icon {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 68px;
+  height: 68px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.07);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  color: white;
+  font-size: 1.8rem;
+  transition: all 0.35s ease;
+  text-decoration: none;
+}
+
+.social-icon:hover {
+  transform: translateY(-12px) scale(1.08);
+  background: rgba(255, 255, 255, 0.12);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+  color: var(--hover-color);
+}
+
+.icon-wrapper {
+  transition: transform 0.4s ease;
+}
+
+.social-icon:hover .icon-wrapper {
+  transform: rotate(12deg) scale(1.15);
+}
+
+/* Tooltip */
+.tooltip {
+  position: absolute;
+  bottom: -45px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(15, 23, 42, 0.95);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+
+.social-icon:hover .tooltip {
+  opacity: 1;
+  bottom: -38px;
+}
+
+/* ── Mobile adjustments ───────────────────────────── */
+@media (max-width: 768px) {
+  .social-section {
+    padding: 3.5rem 1rem;
+  }
+
+  .social-title {
+    font-size: 1.9rem;
+  }
+
+  .social-container {
+    gap: 1.4rem;
+  }
+
+  .social-icon {
+    width: 62px;
+    height: 62px;
+    font-size: 1.6rem;
+  }
+
+  .tooltip {
+    font-size: 0.8rem;
+    bottom: -40px;
+  }
+
+  .social-icon:hover .tooltip {
+    bottom: -34px;
+  }
+}
+
+@media (max-width: 480px) {
+  .social-icon {
+    width: 58px;
+    height: 58px;
+    font-size: 1.5rem;
+  }
+}

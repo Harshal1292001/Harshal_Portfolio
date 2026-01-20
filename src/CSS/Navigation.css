@@ -1,0 +1,97 @@
+/* Navigation.css */
+.portfolio-header {
+  --bs-navbar-padding-y: 1.1rem;
+}
+
+.navbar {
+  transition: all 0.35s ease;
+  backdrop-filter: blur(10px);
+  background-color: rgba(15, 15, 25, 0.85) !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.navbar.scrolled {
+  background-color: rgba(10, 10, 20, 0.97) !important;
+  box-shadow: 0 4px 25px rgba(0, 0, 0, 0.4);
+  --bs-navbar-padding-y: 0.85rem;
+}
+
+/* Brand hover effect */
+.navbar-brand {
+  position: relative;
+  transition: transform 0.3s ease;
+}
+
+.navbar-brand:hover {
+  transform: scale(1.05);
+}
+
+/* Nav links style */
+.nav-link {
+  position: relative;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.85) !important;
+  padding: 0.6rem 1.1rem !important;
+  margin: 0 0.25rem;
+  transition: all 0.3s ease;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: white !important;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2.5px;
+  bottom: 6px;
+  left: 50%;
+  background: linear-gradient(90deg, #6366f1, #a855f7);
+  transition: all 0.35s ease;
+  transform: translateX(-50%);
+  border-radius: 2px;
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+  width: 60%;
+}
+
+/* Mobile menu improvements */
+@media (max-width: 991px) {
+  .navbar-collapse {
+    background: rgba(15, 15, 25, 0.98);
+    backdrop-filter: blur(10px);
+    margin-top: 1rem;
+    padding: 1.5rem;
+    border-radius: 12px;
+    border: 1px solid rgba(255,255,255,0.07);
+  }
+
+  .nav-link {
+    padding: 1rem 1.2rem !important;
+    font-size: 1.1rem;
+  }
+
+  .nav-link::after {
+    left: 1.2rem;
+    transform: none;
+  }
+}
+
+/* Optional - very modern glass + gradient look */
+.navbar::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(99,102,241,0.08), rgba(168,85,247,0.06));
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.6s ease;
+}
+
+.navbar:hover::before {
+  opacity: 1;
+}

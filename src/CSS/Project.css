@@ -1,0 +1,145 @@
+/* Project.css - Modern version */
+
+/* Reset & base */
+section {
+  padding: 5rem 1.5rem 7rem;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0f0f19 0%, #080b14 100%);
+  color: #e2e8f0;
+}
+
+/* Title */
+.section-header {
+  font-size: 3.2rem;
+  font-weight: 800;
+  text-align: center;
+  margin-bottom: 4rem;
+  background: linear-gradient(90deg, #6366f1, #a855f7, #ec4899);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  letter-spacing: -1px;
+}
+
+/* Card container */
+.card {
+  background: rgba(30, 41, 59, 0.38);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(99, 102, 241, 0.22);
+  border-radius: 18px;
+  padding: 2.2rem 2rem;
+  margin-bottom: 2.5rem;
+  transition: all 0.35s cubic-bezier(0.165, 0.84, 0.44, 1);
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.35);
+}
+
+.card:hover {
+  transform: translateY(-14px);
+  box-shadow: 0 25px 60px rgba(99, 102, 241, 0.28);
+  border-color: rgba(168, 85, 247, 0.45);
+}
+
+/* Card title */
+.card-title {
+  font-size: 1.95rem;
+  font-weight: 700;
+  margin-bottom: 1.2rem;
+  color: #f1f5f9;
+  position: relative;
+  display: inline-block;
+}
+
+.card-title::after {
+  content: '';
+  position: absolute;
+  width: 60px;
+  height: 3px;
+  bottom: -8px;
+  left: 0;
+  background: linear-gradient(90deg, #6366f1, #a855f7);
+  border-radius: 3px;
+}
+
+/* Description paragraphs */
+.card-paragraph {
+  line-height: 1.7;
+  color: #cbd5e1;
+  margin-bottom: 1.4rem;
+  font-size: 1.05rem;
+}
+
+/* List items */
+.card ul {
+  margin-top: 1.5rem;
+  padding-left: 1.2rem;
+  list-style: none;
+}
+
+.card li {
+  margin-bottom: 0.9rem;
+  position: relative;
+  padding-left: 1.8rem;
+  color: #cbd5e1;
+}
+
+.card li::before {
+  content: "→";
+  position: absolute;
+  left: 0;
+  color: #a855f7;
+  font-weight: bold;
+}
+
+.card li strong {
+  color: #c7d2fe;
+}
+
+/* Mobile improvements */
+@media (max-width: 768px) {
+  .section-header {
+    font-size: 2.6rem;
+  }
+
+  .card {
+    padding: 1.8rem 1.4rem;
+  }
+
+  .card-title {
+    font-size: 1.75rem;
+  }
+
+  .card-paragraph {
+    font-size: 1rem;
+  }
+}
+
+/* Tablet & up - better spacing */
+@media (min-width: 769px) {
+  section {
+    padding: 6rem 4rem 9rem;
+  }
+
+  .card {
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* Optional: subtle background gradient on hover */
+.card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(99,102,241,0.08), rgba(168,85,247,0.06));
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  z-index: -1;
+}
+
+.card:hover::before {
+  opacity: 1;
+}
