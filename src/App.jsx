@@ -13,17 +13,17 @@ function App() {
 
   return (
     <>
-     <BrowserRouter>
+   
       <Routes>
         <Route path='/Header' element={<Header/>} />
-        <Route path='/Harshal-Portfolio' element={<About/>}/>
+        <Route path='/Harshal_Portfolio' element={<About/>}/>
         <Route path='/Education' element={<Education/>}/>
         <Route path='/Gallery' element={<Gallery/>}/>
         <Route path='/Achievements' element={<Achievements/>}/>
         <Route path='/Projects' element={<Project/>}/>
         <Route path='/ExPerience' element={<ExPerience/>}/>
       </Routes>
-     </BrowserRouter>
+  
       
     </>
   )

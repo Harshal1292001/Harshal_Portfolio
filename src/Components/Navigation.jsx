@@ -40,7 +40,8 @@ function Navigation() {
             <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
               
               <li className="nav-item">
-                <Link className={`nav-link ${isActive('/')}`} to="/">
+                <Link className={`nav-link ${isActive('/Harshal_Portfolio')}`} to="/Harshal_Portfolio
+">
                   About
                 </Link>
               </li>
