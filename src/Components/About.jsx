@@ -9,7 +9,7 @@ import {
 import '../CSS/SocialLink.css';
 
 // Make sure this path is correct
-import profilePhoto from '../assets/Harshal_Patil.jpg';
+import profilePhoto from '../assets/Harshal.jpeg';
 // import SocialLinks from './SocialLink';
 
 function About() {
@@ -107,7 +107,7 @@ function About() {
 
                 <div className="cta-buttons">
                   <a
-                    href="/Harshal_Patil_Resume.pdf"  // ← Change this path
+                    href="https://drive.google.com/file/d/1J-_GiGKchLjD8evUs60CXagZ37Bgk7zJ/view?usp=sharing"  // ← Change this path
                     className="btn primary-btn"
                     download
                   >

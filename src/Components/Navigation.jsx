@@ -45,8 +45,8 @@ function Navigation() {
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className={`nav-link ${isActive('/Exerience')}`} to="/ExPerience">
-                  Home
+                <Link className={`nav-link ${isActive('/Exerience')}`} to="/Experience">
+                  Experience
                 </Link>
               </li>
               <li className="nav-item">
@@ -62,6 +62,11 @@ function Navigation() {
               <li className="nav-item">
                 <Link className={`nav-link ${isActive('/Projects')}`} to="/Projects">
                   Projects
+                </Link>
+              </li>
+               <li className="nav-item">
+                <Link className={`nav-link ${isActive('/Gallery')}`} to="/Gallery">
+                  Gallery
                 </Link>
               </li>
              
