@@ -89,7 +89,7 @@ function About() {
                   </p>
 
                   <p>
-                    I build modern, responsive frontends with <strong>React, JavaScript & TypeScript</strong>
+                    I build modern, responsive frontends with <strong>React, JavaScript</strong>
                     and develop robust enterprise backends using
                     <strong> Java • Spring Boot • Hibernate • Microsoft SQL Server</strong>.
                   </p>
@@ -114,7 +114,7 @@ function About() {
                     <span className="emoji">📄</span> Download Resume
                   </a>
 
-                  <a href="mailto:your.email@example.com" className="btn secondary-btn">
+                  <a href="mailto:hp12092001@gmail.com" className="btn secondary-btn">
                     Let's Connect →
                   </a>
                 </div>
