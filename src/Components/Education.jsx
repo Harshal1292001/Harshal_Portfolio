@@ -42,7 +42,7 @@ function Education() {
             Jay Yogeshwar Arts and Science College, Amalner
           </p>
           <p style={{ color: '#94a3b8', fontSize: '0.85rem', marginBottom: '0.5rem' }}>
-            Completed · 2020 &nbsp;|&nbsp; Percentage: <strong>64.62%</strong>
+            Completed · 2019 &nbsp;|&nbsp; Percentage: <strong>64.62%</strong>
           </p>
         </div>
 
