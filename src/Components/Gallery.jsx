@@ -51,7 +51,7 @@ function Gallery() {
       year: "July 2025",
       image: Birthday_3,
     },{
-      title: "Office's Guruji Birthday Celebration",
+      title: "Office's  Birthday Celebration",
       location: "Pune",
       year: "July 2024",
       image: Birthday_1,

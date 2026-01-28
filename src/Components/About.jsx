@@ -126,11 +126,11 @@ function About() {
               <h3 className="skills-heading">Core Skills & Technologies</h3>
               <div className="skills-grid">
                 {[
-                  "React", "JavaScript", "TypeScript", "HTML5", "CSS3", "Bootstrap 5",
+                  "React", "JavaScript", "HTML5", "CSS3", "Bootstrap 5",
                   "Java", "Spring Boot", "Hibernate", "RESTful APIs",
                   "MS SQL Server", "PostgreSQL", "Git", "GitHub",
                   "Postman", "IIS Deployment", "NSSM", "Windows Server",
-                  "Production Support", "Troubleshooting"
+                  , "ERP",
                 ].map((skill) => (
                   <span key={skill} className="skill-tag">
                     {skill}
