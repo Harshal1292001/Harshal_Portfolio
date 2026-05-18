@@ -6,8 +6,8 @@ import Header from './Components/Header'
 import Education from './Components/Education'
 import Achievements from './Components/Achievements'
 import Project from './Components/Project'
-import ExPerience from './Components/ExPerience'
 import Gallery from './Components/Gallery'
+import Experience from './Components/Experience'
 
 function App() {
 
@@ -21,7 +21,7 @@ function App() {
         <Route path='/Gallery' element={<Gallery/>}/>
         <Route path='/Achievements' element={<Achievements/>}/>
         <Route path='/Projects' element={<Project/>}/>
-        <Route path='/ExPerience' element={<ExPerience/>}/>
+        <Route path='/Experience' element={<Experience/>}/>
       </Routes>
   
       

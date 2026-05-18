@@ -3,7 +3,7 @@ import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import '../CSS/Navigation.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
-import ExPerience from './ExPerience';
+import ExPerience from './Experience';
 
 function Navigation() {
   const location = useLocation();
@@ -46,7 +46,7 @@ function Navigation() {
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className={`nav-link ${isActive('/Exerience')}`} to="/Experience">
+                <Link className={`nav-link ${isActive('/Experience')}`} to="/Experience">
                   Experience
                 </Link>
               </li>

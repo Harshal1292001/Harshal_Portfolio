@@ -79,12 +79,12 @@ function About() {
                 </h1>
 
                 <h2 className="subtitle">
-                  Trainee Software Support Engineer — Full Stack Developer
+                  Junior Software Developer (Full Stack)
                 </h2>
 
                 <div className="description">
                   <p>
-                    Working at <strong>Nyati Group</strong> as a Trainee Software Support Engineer
+                    Working at <strong>Nyati Group</strong> as a Junior Software Developer
                     while actively contributing as a Full Stack Developer.
                   </p>
 
@@ -107,7 +107,7 @@ function About() {
 
                 <div className="cta-buttons">
                   <a
-                    href="https://drive.google.com/file/d/1WlL9qlIXExNMbp_AAZixI0ialTkHgf3-/view?usp=sharing"  // ← Change this path
+                    href="https://drive.google.com/file/d/1RUvjxaY9Neym_3K7lBrwDYBhrr8_nZFE/view?usp=sharing"  // ← Change this path
                     className="btn primary-btn"
                     download
                   >
