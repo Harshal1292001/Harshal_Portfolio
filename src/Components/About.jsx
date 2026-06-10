@@ -107,7 +107,7 @@ function About() {
 
                 <div className="cta-buttons">
                   <a
-                    href="https://drive.google.com/file/d/1RUvjxaY9Neym_3K7lBrwDYBhrr8_nZFE/view?usp=sharing"  // ← Change this path
+                    href="https://drive.google.com/file/d/1_V_fhJ_XBKu2ZoEFNfzzAW_As5NKRNEt/view?usp=sharing"  // ← Change this path
                     className="btn primary-btn"
                     download
                   >
